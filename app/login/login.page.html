@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar color="custom-dark">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-img src="assets/img/iconoEX.jpeg" style="width: 30px; height: 30px;"></ion-img>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center white-text">Express</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="menu" slot="icon-only" class="custom-menu-button"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <h1 class="main-title">Bienvenido a la App</h1>
+  <p class="subtitle">Inicia sesión</p>
+  
+  <ion-card class="login-card">
+    <ion-card-content>
+      <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+        <ion-label>Usuario</ion-label>
+        <ion-item>
+          <ion-input 
+            [(ngModel)]="username" 
+             
+            maxlength="10" 
+            minlength="5" 
+            required
+            placeholder="Ingresa tu usuario" 
+            autocomplete="off"
+            name="username">
+          </ion-input>
+        </ion-item>
+        <ion-label>Contraseña</ion-label>
+        <ion-item>
+          <ion-input 
+            [(ngModel)]="password" 
+             
+            type="password" 
+            maxlength="4" 
+            required
+            placeholder="Ingresa tu contraseña" 
+            autocomplete="off"
+            name="password">
+          </ion-input>
+        </ion-item>
+        <ion-button expand="block" type="submit"  class="boton-animado" (click)="animarBoton()">
+          INGRESAR
+        </ion-button>
+        <ion-text class="forgot-password">
+
+        </ion-text>
+      </form>
+    </ion-card-content>
+  </ion-card>
+  
+  <p class="create-account ion-text-center">
+    ¿No tienes una cuenta? <button> <a (click)="crearCuentaNueva()">Crear cuenta nueva</a> </button>
+  </p>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="custom-dark">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon name="home" color="light"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

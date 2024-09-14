@@ -1,0 +1,114 @@
+<ion-content [fullscreen]="true">
+  
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      
+      <ion-buttons slot="start">
+        <ion-img src="assets/img/iconoEX.jpeg" style="width: 60px; height: 60px;"></ion-img>
+      </ion-buttons>
+  
+      
+      <ion-title style="text-align: center; font-size: 2rem;">
+        Express
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  
+  <ion-item>
+    <ion-label class="welcome-message" style="text-align: center">Bienvenido {{username}}</ion-label>
+  </ion-item>
+
+  
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button href="/inventario_bebestibles">Inventario Bebestibles</ion-button>
+      <ion-button href="/inventario_comida">Inventario comida</ion-button>
+      <ion-button href="/lista_proveedores">Proveedores</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <ion-button (click)="animarTarjeta()">haz click</ion-button>
+  <ion-searchbar placeholder="Buscar"></ion-searchbar>
+
+  
+  <section class="funcionalidades" style="padding: 20px;">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12">
+          <h2 style="text-align: center;">Gestiona tu restaurant con servicios Express</h2>
+          
+        </ion-col>
+      </ion-row>
+
+      
+      <ion-row>
+        
+        <ion-col size="6" size-md="6" size-lg="4" class="ion-padding">
+          
+          <div class="card" style="max-width: 320px; margin: auto;">
+            <ion-img src="assets/img/analisis-de-datos.jpg" alt="Análisis de Datos"></ion-img>
+            <div class="card-content">
+              <h3>Análisis de Datos</h3>
+              <p>Informes sobre ventas, preferencias de clientes y rendimiento de promociones.</p>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col size="6" size-md="6" size-lg="4" class="ion-padding">
+          <div class="card" style="max-width: 320px; margin: auto;">
+            <ion-img src="assets/img/controlinv.jpeg" alt="Control de Inventario"></ion-img>
+            <div class="card-content">
+              <h3>Control de Inventario</h3>
+              <p>Gestión del inventario en tiempo real basado en los pedidos realizados.</p>
+              <p>Alertas para la reposición de ingredientes.</p>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col size="6" size-md="6" size-lg="4" class="ion-padding">
+          <div class="card" style="max-width: 320px; margin: auto;">
+            <ion-img src="assets/img/update.jpeg" alt="Actualización del Menú"></ion-img>
+            <div class="card-content">
+              <h3>Actualización del Menú</h3>
+              <p>Herramienta para actualizar el menú y los precios de forma rápida y sencilla.</p>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col size="6" size-md="6" size-lg="4" class="ion-padding">
+          <div class="card" style="max-width: 320px; margin: auto;">
+            <ion-img src="assets/img/ubicacion.jpeg" alt="Ubicacion"></ion-img>
+            <div class="card-content">
+              <h3>Ubicación y Horarios</h3>
+              <p>Información sobre la ubicación del restaurante y horarios de apertura ademas de una Integración con mapas para facilitar la llegada.</p>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col size="6" size-md="6" size-lg="4" class="ion-padding">
+          <div class="card" style="max-width: 320px; margin: auto;">
+            <ion-img src="assets/img/sistema pedidos.png" alt="Gestión de Pedidos"></ion-img>
+            <div class="card-content">
+              <h3>Sistema de Gestión de Pedidos</h3>
+              <p>Panel para gestionar y rastrear pedidos en tiempo real.
+              </p>
+              <p>Alertas y notificaciones para nuevos pedidos y cambios.</p>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col size="6" size-md="6" size-lg="4" class="ion-padding">
+          <div class="card" style="max-width: 320px; margin: auto;">
+            <ion-img src="assets/img/interfazpersonal.jpeg" alt="Interfaz para el Personal"></ion-img>
+            <div class="card-content">
+              <h3>Interfaz para el Personal</h3>
+              <p>Funcionalidades para que el personal registre pedidos, actualice el estado de las mesas y gestione el servicio.</p>
+            </div>
+          </div>
+        </ion-col>
+        
+      </ion-row>
+    </ion-grid>
+  </section>
+</ion-content>

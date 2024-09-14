@@ -1,0 +1,126 @@
+ion-content {
+    --background: #dae7de;
+  }
+  
+  ion-header, ion-footer {
+    ion-toolbar {
+      --background: #f58d32;
+      --color: rgb(23, 21, 21);
+    }
+  }
+  
+  .custom-menu-button {
+    color: rgb(20, 19, 19);
+    font-size: 24px;
+  }
+  
+  .white-text {
+    color: rgb(18, 15, 15) !important;
+  }
+  
+  .main-title {
+    color: rgb(24, 24, 24);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    color: rgb(19, 19, 19);
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+  
+  .login-card {
+    background: rgb(236, 74, 5);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 90%;
+  
+    ion-card-content {
+      padding: 20px;
+    }
+  
+    ion-label {
+      color: #333;
+      margin-bottom: 5px;
+      display: block;
+    }
+  
+    ion-item {
+      --background: rgb(247, 239, 239);
+      --border-color: #d3d3d3;
+      --highlight-color-focused: #6200ee;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #d3d3d3;
+  
+      ion-input {
+        color: #333;
+        --padding-start: 10px;
+      }
+    }
+  
+    //ESTILO BOTON INGRESAR LOGIN
+    .boton-animado {
+      --background: #0c85ef ;
+      --color: white ;
+      --background-activated: #121211;
+      --background-focused: #090a09;
+      --background-hover: #0c0c0c;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      height: 10px;
+      font-size: 16px;
+      text-transform: uppercase;   
+     
+    }
+    
+    //TEXTO VISIBLE
+    .custom-login-button::part(native) {
+      color: rgb(14, 14, 14);
+    }
+  }
+  
+  .forgot-password {
+    text-align: center;
+    
+    a {
+      color: #42316C;
+      text-decoration: none;
+    }
+  }
+  
+  .create-account {
+    color: rgb(14, 14, 14);
+    margin-top: 20px;
+    margin-left: 45px;
+    
+    a {
+      color: #080808;
+      text-decoration: none;
+    }
+  }
+  
+  ion-footer {
+    ion-toolbar {
+      --padding-start: 0;
+      --padding-end: 0;
+      --padding-top: 0;
+      --padding-bottom: 0;
+  
+      ion-buttons {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+  
+      ion-button {
+        --color: white;
+      }
+    }
+  }
